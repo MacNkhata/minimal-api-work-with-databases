@@ -22,6 +22,10 @@ function Pizza() {
     setMaxId(Math.max(...pizzaData.map(pizza => pizza.id)));
   };
 
+//   fetch("http://localhost:5100/pizzas")
+//   .then(response => response.json())
+//   .then(data => console.log(data)) // outputs mocked data
+
   const handleCreate = (item) => {
     // Simulate creating item on API
     const newItem = { ...item, id: data.length + 1 };
